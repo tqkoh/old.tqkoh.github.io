@@ -1,0 +1,47 @@
+﻿body {
+	font-family: "sans-serif";
+	font-weight: bold;
+}
+
+.header {
+	background-color: black;
+	color: white;
+	height: 90px;
+}
+
+.header-logo {
+	font-size: 36px;
+	float: left;
+	padding: 20px 40px;
+}
+
+.header-list {
+	float: left;
+}
+
+	.header-list li {
+		list-style: none;
+		float: left;
+		padding: 30px 20px;
+	}
+
+
+.footer {
+	background-color: #333333;
+	color: #fff;
+	height: 120px;
+	padding: 40px;
+}
+
+.footer-logo{
+	float:left;
+	font-size:32px;
+}
+
+.footer-list{
+	float:right;
+}
+.footer-list li{
+	padding-bottom:20px;
+	list-style:none;
+}
