@@ -5,6 +5,10 @@ bin/
 obj/
 packages/
 properties/
+*.config
+*.csproj
+*.csproj.user
+*.sln
 
 # User-specific files
 *.suo
