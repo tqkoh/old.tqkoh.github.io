@@ -2,17 +2,32 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Tqk</title>
+	<title>Tqkのページ</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="//code.createjs.com/easeljs-0.8.2.min.js"></script>
+	<link href="//fonts.googleapis.com/css?family=Squada+One" rel="stylesheet" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!--<script src="/public/js/jquery-1.9.1.min.js"></script>-->
+	<script src="/public/js/analytics.js"></script>
+	<script src="/public/js/base.js"></script>
+	<script src="/public/js/bootstrap.min.js"></script>
+	<!--<script src="/public/js/easeljs-0.8.2.min.js"></script>-->
+	<script src="/public/js/ga.js"></script>
+	<script src="/public/js/ja.js"></script>
+	<script src="/public/js/moment.min.js"></script>
+	<script src="/public/js/rating-graph.js"></script>
+	<script src="/public/js/utils.js"></script>
+	<script src="/public/js/lib/bootstrap.min.js"></script>
+	<!--<script src="/public/js/lib/jquery-1.9.1.min.js"></script>-->
 </head>
 <body>
 
-	<!--<h1 id="tqk">Tqk</h1>
-	<p>twitter =&gt; <a href="https://twitter.com/tqkoh">https://twitter.com/tqkoh</a></p>-->
+
 
 	<div class="header">
 
-		<div class="header-logo">Tqk.github.io</div>
+		<div class="header-logo">Tqkのページ</div>
 
 		<div class="header-list">
 			<ul>
@@ -24,17 +39,46 @@
 
 
 	<div class="main">
-		
+
 		<div>
-			
+			<div class="profile">
+				<h1>Profile</h1>
+				<ul>
+					<li>競技プログラミングをしています</li>
+					<li></li>
+				</ul>
+			</div>
+
+			<div class="links">
+				<h1>Links</h1>
+				<p><a href="https://twitter.com/tqkoh">twitter</a></p>
+				<h3><a href="https://atcoder.jp/users/Tqk">atcoder</a></h3>
+				<p>
+					<div id="graph">
+						<h3><a href="//atcoder.jp/users/Tqk" class="username" target="_blank">
+								<span class="user-cyan">Tqk</span>
+						    </a>
+						</h3>
+						<canvas id="ratingStatus" width="640" height="80"></canvas>
+						<br>
+						<canvas id="ratingGraph" width="640" height="360"></canvas>
+						<br>
+					</div>
+
+					<script>      name = "Tqk";
+						rating_history = [{ "EndTime": 1529156400, "NewRating": 264, "Place": 433, "ContestName": "AtCoder Beginner Contest 100", "StandingsUrl": "/contests/abc100/standings?watching=Tqk" }, { "EndTime": 1529761200, "NewRating": 495, "Place": 419, "ContestName": "AtCoder Beginner Contest 101", "StandingsUrl": "/contests/abc101/standings?watching=Tqk" }, { "EndTime": 1530450600, "NewRating": 612, "Place": 425, "ContestName": "AtCoder Beginner Contest 102", "StandingsUrl": "/contests/abc102/standings?watching=Tqk" }, { "EndTime": 1530972000, "NewRating": 802, "Place": 658, "ContestName": "SoundHound Inc. Programming Contest 2018 -Masters Tournament-", "StandingsUrl": "/contests/soundhound2018-summer-qual/standings?watching=Tqk" }, { "EndTime": 1531578600, "NewRating": 748, "Place": 1624, "ContestName": "AtCoder Grand Contest 026", "StandingsUrl": "/contests/agc026/standings?watching=Tqk" }, { "EndTime": 1532180400, "NewRating": 849, "Place": 515, "ContestName": "AtCoder Beginner Contest 103", "StandingsUrl": "/contests/abc103/standings?watching=Tqk" }, { "EndTime": 1533476400, "NewRating": 960, "Place": 369, "ContestName": "AtCoder Beginner Contest 104", "StandingsUrl": "/contests/abc104/standings?watching=Tqk" }, { "EndTime": 1534599600, "NewRating": 898, "Place": 1443, "ContestName": "AtCoder Beginner Contest 106", "StandingsUrl": "/contests/abc106/standings?watching=Tqk" }, { "EndTime": 1535204400, "NewRating": 901, "Place": 474, "ContestName": "AtCoder Beginner Contest 107", "StandingsUrl": "/contests/abc107/standings?watching=Tqk" }, { "EndTime": 1535809200, "NewRating": 950, "Place": 211, "ContestName": "AtCoder Beginner Contest 108", "StandingsUrl": "/contests/abc108/standings?watching=Tqk" }, { "EndTime": 1536414000, "NewRating": 991, "Place": 574, "ContestName": "AtCoder Beginner Contest 109", "StandingsUrl": "/contests/abc109/standings?watching=Tqk" }, { "EndTime": 1537021200, "NewRating": 1159, "Place": 345, "ContestName": "AtCoder Grand Contest 027", "StandingsUrl": "/contests/agc027/standings?watching=Tqk" }, { "EndTime": 1538228400, "NewRating": 1165, "Place": 234, "ContestName": "AtCoder Beginner Contest 111", "StandingsUrl": "/contests/abc111/standings?watching=Tqk" }, { "EndTime": 1538833200, "NewRating": 1149, "Place": 837, "ContestName": "AtCoder Beginner Contest 112", "StandingsUrl": "/contests/abc112/standings?watching=Tqk" }, { "EndTime": 1539441000, "NewRating": 1266, "Place": 345, "ContestName": "AtCoder Grand Contest 028", "StandingsUrl": "/contests/agc028/standings?watching=Tqk" }, { "EndTime": 1540647600, "NewRating": 1200, "Place": 721, "ContestName": "Tenka1 Programmer Contest", "StandingsUrl": "/contests/tenka1-2018/standings?watching=Tqk" }, { "EndTime": 1543064400, "NewRating": 1117, "Place": 1372, "ContestName": "Dwango Programming Contest V / 第5回 ドワンゴからの挑戦状 予選", "StandingsUrl": "/contests/dwacon5th-prelims/standings?watching=Tqk" }, { "EndTime": 1543758000, "NewRating": 1119, "Place": 537, "ContestName": "AtCoder Beginner Contest 114", "StandingsUrl": "/contests/abc114/standings?watching=Tqk" }, { "EndTime": 1544277000, "NewRating": 1157, "Place": 362, "ContestName": "AtCoder Beginner Contest 115", "StandingsUrl": "/contests/abc115/standings?watching=Tqk" }, { "EndTime": 1544883600, "NewRating": 1172, "Place": 975, "ContestName": "AtCoder Grand Contest 029", "StandingsUrl": "/contests/agc029/standings?watching=Tqk" }, { "EndTime": 1545487200, "NewRating": 1227, "Place": 4, "ContestName": "CADDi 2018 for Beginners", "StandingsUrl": "/contests/caddi2018b/standings?watching=Tqk" }, { "EndTime": 1546091400, "NewRating": 1299, "Place": 462, "ContestName": "AtCoder Grand Contest 030", "StandingsUrl": "/contests/agc030/standings?watching=Tqk" }];
+					</script>
+				</p>
+			</div>
+
 		</div>
 
 	</div>
 
 
 	<div class="footer">
-		
-		<div class="footer-logo">Tqk.github.io</div>
+
+		<div class="footer-logo">Tqkのページ</div>
 
 		<div class="footer-list">
 			<ul>
@@ -44,18 +88,5 @@
 		</div>
 
 	</div>
-
-	<!--<script src="https://i.yimg.jp/images/yjdn/js/bakusoku-yql-v1-min.js"
-			data-url="https://tqk.hatenablog.jp/feed">
-                <ul>
-                    {{#query.results.entry}}
-                    <li>
-                        //{{published}}<br>
-                        <a href="{{link.0.href}}" target="_blank">{{title}}</a>
-                    </li>
-                    {{/query.results.entry}}
-                </ul>
-	</script>-->
-	<!--<iframe width="500" height="300" src="https://tqk.hatenablog.jp/feed" scrolling="auto"></iframe>-->
 </body>
 </html>
