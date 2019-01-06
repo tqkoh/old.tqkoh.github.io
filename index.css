@@ -19,11 +19,17 @@
 	float: left;
 }
 
-	.header-list li {
-		list-style: none;
-		float: left;
-		padding: 30px 20px;
-	}
+.header-list li {
+	list-style: none;
+	float: left;
+	padding: 30px 20px;
+}
+
+.acusername {
+	color: #00C0C0;
+	font-weight: bold;
+	text-decoration: none;
+}
 
 
 .footer {
@@ -33,15 +39,16 @@
 	padding: 40px;
 }
 
-.footer-logo{
-	float:left;
-	font-size:32px;
+.footer-logo {
+	float: left;
+	font-size: 32px;
 }
 
-.footer-list{
-	float:right;
+.footer-list {
+	float: right;
 }
-.footer-list li{
-	padding-bottom:20px;
-	list-style:none;
+
+.footer-list li {
+	padding-bottom: 20px;
+	list-style: none;
 }
