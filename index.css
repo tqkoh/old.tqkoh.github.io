@@ -5,11 +5,11 @@
 }
 
 a:link {
-	color: #006fff;
+	color: #47acd5;
 }
 
 a:visited {
-	color: #006fff;
+	color: #47acd5;
 }
 
 
@@ -63,6 +63,21 @@ a:visited {
 }
 
 .header-logo a:hover {
+	color: #c6ffff;
+	text-decoration: none;
+}
+
+.footer-logo a:link {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.footer-logo a:visited {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.footer-logo a:hover {
 	color: #c6ffff;
 	text-decoration: none;
 }
