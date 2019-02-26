@@ -1,7 +1,11 @@
 ﻿body {
-	font-family: "OCRB";
+	font-family: "OCRB",monospace;
 	background-color: #202020;
 	color: #f0f0f0;
+}
+
+.narrowfont {
+	letter-spacing: -0.08em;
 }
 
 a:link {
@@ -47,8 +51,16 @@ a:visited {
 }
 
 .acusername {
-	font-family:sans-serif;
+	font-family: sans-serif;
 	color: #00C0C0;
+	letter-spacing: 0.00em;
+	font-weight: bold;
+}
+
+.cfusername {
+	font-family: "Helvetica Neue", Helvetica, Arial, monospace;
+	color: #03A89E;
+	letter-spacing: 0.00em;
 	font-weight: bold;
 }
 
