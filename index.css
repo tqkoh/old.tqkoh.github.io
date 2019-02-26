@@ -1,15 +1,23 @@
 ﻿body {
 	font-family: "OCRB",monospace;
 	margin:0px;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.01em;
 	background-image: url("https://i.imgur.com/VppJEnh.jpg");
 	background-size: cover;
 	background-position: center;
-	color: #f0f0f0;
+	color: #e3e3e3;
+}
+
+.history p {
+	text-indent: 2em;
+}
+
+.links p {
+	text-indent: 2em;
 }
 
 .contents {
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(33,33,33,0.4);
 }
 
 .narrowfont {
