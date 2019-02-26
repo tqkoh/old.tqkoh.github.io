@@ -1,11 +1,23 @@
 ﻿body {
-	font-family: "sans-serif";
-	font-weight: bold;
+	font-family: "OCRB";
+	background-color: #202020;
+	color: #f0f0f0;
 }
 
+a:link {
+	color: #006fff;
+}
+
+a:visited {
+	color: #006fff;
+}
+
+
+
+
+
 .header {
-	background-color: black;
-	color: white;
+	background-color: #444444;
 	height: 90px;
 }
 
@@ -16,6 +28,7 @@
 }
 
 .header-list {
+	color: #f0f0f0;
 	float: left;
 }
 
@@ -25,15 +38,54 @@
 	padding: 30px 20px;
 }
 
+
+
+
+
+.main {
+	padding: 10px 30px;
+}
+
 .acusername {
+	font-family:sans-serif;
 	color: #00C0C0;
 	font-weight: bold;
 }
 
+.header-logo a:link {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.header-logo a:visited {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.header-logo a:hover {
+	color: #c6ffff;
+	text-decoration: none;
+}
+
+.header-list li a:link {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.header-list li a:visited {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.header-list li a:hover {
+	color: #c6ffff;
+	text-decoration: none;
+}
+
+
 
 .footer {
-	background-color: #333333;
-	color: #fff;
+	background-color: #444444;
 	height: 120px;
 	padding: 40px;
 }
